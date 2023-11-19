@@ -16,6 +16,7 @@ const typeDefs = gql`
     author: String
     description: String
     url: String
+    urlToImage: String
   }
 
   type Source {

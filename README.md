@@ -21,7 +21,7 @@ Subsequently, include the API key in this file:
 
 ## Docker with Kubernetes:
 
-(If you are running minkube with the docker driver, run:
+(If you are running minikube with the docker driver, run:
 
   ```bash
   eval $(minikube docker-env)

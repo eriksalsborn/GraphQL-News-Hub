@@ -28,23 +28,39 @@ Subsequently, include the API key in this file:
   ```
 This simply sets some environment variables in your current shell to point the *docker client* to the *docker host* that is running the *minikube* K8s cluster. This prevents that pods running in the minikube docker container can't access the images that are built on the host machine.)
 
-1. **Build Docker Images:**
+### Build Docker Images:
+Server
 
-   ```bash
-   docker build -t news-client .
-   docker build -t news-server .
-   ```
+1. **Navigate To The Server Directory:**
+```bash
+    cd news-server
+```
+2. **Build Server Image:**
+```bash
+    docker build -t news-server .
+```
 
-2. **Apply Kubernetes Configurations:**
+Client
+
+1. **Navigate To The Server Directory:**
+```bash
+    cd client-server
+```
+2. **Build Client Image:**
+```bash
+    docker build -t news-client .
+```
+
+### Apply Kubernetes Configurations:
    
-    ```bash
-    kubectl apply -f kubernetes/deployments/server-deployment.yaml
-    kubectl apply -f kubernetes/services/server-service.yaml
-    kubectl apply -f kubernetes/deployments/client-deployment.yaml
-    kubectl apply -f kubernetes/services/client-service.yaml
-    ```
+```bash
+kubectl apply -f kubernetes/deployments/server-deployment.yaml
+kubectl apply -f kubernetes/services/server-service.yaml
+kubectl apply -f kubernetes/deployments/client-deployment.yaml
+kubectl apply -f kubernetes/services/client-service.yaml
+```
     
-3. **Access Applications:**
+### Access Applications:
 
 **Server:**
 
@@ -57,7 +73,7 @@ This simply sets some environment variables in your current shell to point the *
     kubectl port-forward service/client-service 3000:80
 ```
 
-#### Hurray! Now you can access the client on http://localhost:3000/
+#### Hurray! You can access the application on http://localhost:3000/
 
 ## Local Development:
 
@@ -91,4 +107,4 @@ This simply sets some environment variables in your current shell to point the *
    npm start
 ```
 
-#### Hurray! Now you can access the client on http://localhost:3000/
+#### Hurray! You can now access the application on http://localhost:3000/

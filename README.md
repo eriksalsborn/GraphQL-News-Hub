@@ -5,11 +5,10 @@ Simple application that harnesses the capabilities of GraphQL and the adaptabili
 
 ## Project Prerequisites:
 
-1. **Get an API key:**
-
 This project utilizes NewsAPI for retrieving news articles.
 Authorization for this API is contingent upon the provision of an API key.
 
+1. **Get an API key:**
 Get one for free at: https://newsapi.org
 
 2. **Create an .env and add your API key:**

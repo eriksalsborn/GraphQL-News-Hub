@@ -3,6 +3,8 @@ Simple application that harnesses the capabilities of GraphQL and the adaptabili
 
 <img width="1840" alt="Screenshot 2023-11-20 at 10 59 33" src="https://github.com/eriksalsborn/GraphQL-News-Hub/assets/26621152/e03d2734-aa3a-43e8-8d04-d072cccb1983">
 
+![Alt text](news-app-demo.gif) / ![](news-app-demo.gif)
+
 # Getting Started 
 
 ## Project Prerequisites:

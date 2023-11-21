@@ -1,9 +1,11 @@
 # GraphQL-News-Hub
 Simple application that harnesses the capabilities of GraphQL and the adaptability of React to deliver a straightforward news search experience.
 
-<img width="1840" alt="Screenshot 2023-11-20 at 10 59 33" src="https://github.com/eriksalsborn/GraphQL-News-Hub/assets/26621152/e03d2734-aa3a-43e8-8d04-d072cccb1983">
+![nylander](https://github.com/eriksalsborn/GraphQL-News-Hub/assets/26621152/9bac1f8c-45d1-4fe0-90ea-943fdd7cd127)
 
-![Alt text](news-app-demo.gif) / ![](news-app-demo.gif)
+Effortlessly find articles on your chosen topic by conducting a simple search. Click on the article to seamlessly navigate to the source and delve deeper into the content.
+
+![demo](news-app-demo.gif)
 
 # Getting Started 
 
